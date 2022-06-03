@@ -15,6 +15,7 @@ const Header = () => {
       </IconButton>
 
         <h1>hello</h1>
+        <Link to='/about'>About us</Link>
       </Toolbar>
     </AppBar>
                 )
