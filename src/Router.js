@@ -9,26 +9,29 @@ import App from "./App";
 import NotFound from "./pages/NotFound";
 
 import About from "./pages/About";
+import { AlertProvider } from "./context/alert/AlertContext";
 
 const Router = () => {
   return (
     <BrowserRouter>
-      <Box>
-        <Container
-          sx={{
-            mt: "10%",
-            height: "100vh",
-          }}
-        >
-          <Header />
-          <Routes>
-            <Route path="/" element={<App />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/*" element={<NotFound />} />
-          </Routes>
-        </Container>
-        <Footer />
-      </Box>
+      <AlertProvider>
+        <Box>
+          <Container
+            sx={{
+              mt: "10%",
+              height: "100vh",
+            }}
+          >
+            <Header />
+            <Routes>
+              <Route path="/" element={<App />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/*" element={<NotFound />} />
+            </Routes>
+          </Container>
+          <Footer />
+        </Box>
+      </AlertProvider>
     </BrowserRouter>
   );
 };
