@@ -1,0 +1,22 @@
+import React from "react";
+
+import Box from "@mui/material/Box";
+const Footer = () => {
+  return (
+    <Box
+      sx={{
+        position: "absolute",
+        bottom: 0,
+      }}
+    >
+      <h2>Footer</h2>
+b[x]
+
+
+	Hello, and how are you doin?
+    </Box>
+  );
+};
+
+export default Footer;
+<Box></Box>

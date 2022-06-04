@@ -1,23 +1,48 @@
-import { Link, BrowserRouter, Routes, Route } from 'react-router-dom'
+import React, { useState } from "react";
+import Typography from "@mui/material/Typography";
 
-import Header from './components/Header'
-import Footer from './components/Footer'
+import Paper from "@mui/material/Paper";
+import IconButton from "@mui/material/IconButton";
+import InputBase from "@mui/material/InputBase";
+import SearchIcon from "@mui/icons-material/Search";
+import List from '@mui/material/List';
 
-import About from './pages/About'
-
+import UserResults from "./users/UserResults";
 
 const App = () => {
-        return (
-                <BrowserRouter>
+  const [text, setText] = useState("");
 
-                        <Header />
-                        <Routes>
-                        <Route to='/hi' element={<h2> hi</h2>} />
-                        <Route to='/about' element={<About />} />
-                        </Routes>
-                        <Footer />
-                </BrowserRouter>
-                )
-}
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+  const enteredText = (e) => {
+    setText(e.target.value);
+  };
+  return (
+    <div>
+      <h1>Welcome</h1>
+      <Paper
+        onSubmit={handleSubmit}
+        component="form"
+        sx={{
+          p: "2px 4px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          width: 400,
+        }}
+      >
+        <InputBase onChange={enteredText} placeholder="Search a name" />
+        <IconButton>
+          <SearchIcon />{" "}
+        </IconButton>
+      </Paper>
+      <Typography>{text}</Typography>
+      <List>
+        <UserResults />
+      </List>
+    </div>
+  );
+};
 
-export default App
+export default App;
