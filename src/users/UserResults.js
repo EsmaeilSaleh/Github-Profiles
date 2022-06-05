@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 
 import Grid from "@mui/material/Grid";
 
@@ -7,10 +7,7 @@ import GithubContext from '../context/github/GithubContext'
 
 const UserResults = () => {
 
-const {users, fetchUsers} = useContext(GithubContext)
-  useEffect(() => {
-    fetchUsers();
-  }, []);
+const {users} = useContext(GithubContext)
 
   return (
     <div>

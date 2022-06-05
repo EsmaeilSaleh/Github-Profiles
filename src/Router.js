@@ -6,6 +6,7 @@ import Box from "@mui/material/Box";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import App from "./App";
+import User from './pages/User'
 import NotFound from "./pages/NotFound";
 
 import About from "./pages/About";
@@ -28,6 +29,7 @@ const Router = () => {
               <Routes>
                 <Route path="/" element={<App />} />
                 <Route path="/about" element={<About />} />
+                <Route path="/user/:login" element={<User />} />
                 <Route path="/*" element={<NotFound />} />
               </Routes>
             </Container>
