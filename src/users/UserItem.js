@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
@@ -7,7 +7,7 @@ import Avatar from "@mui/material/Avatar";
 import Typography from "@mui/material/Typography";
 
 const UserItem = ({ user }) => {
-console.log(user);
+  console.log(user);
   return (
     <Grid item xs={2} sm={4} md={3} key={user.id}>
       <Card sx={{ width: "12em", height: "2em" }}>
@@ -26,9 +26,9 @@ console.log(user);
             />
           </Grid>
           <Grid>
-          <Link to={`/user/${user.login}`}>
-            <Typography sx={{ ml: 2 }}>{user.login}</Typography>
-</Link>
+            <Link style={{ textDecoration: "none" }} to={`/user/${user.login}`}>
+              <Typography sx={{ ml: 2 }}>{user.login}</Typography>
+            </Link>
           </Grid>
         </Grid>
       </Card>

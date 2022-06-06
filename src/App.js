@@ -9,6 +9,7 @@ const App = () => {
   return (
     <div>
       <h1>Welcome</h1>
+      Search for a github profile(e.g: linus):
       <UserSearch />
       <List>
         <UserResults />
