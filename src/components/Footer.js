@@ -16,7 +16,7 @@ const Footer = () => {
       }}
     >
       <h2 style={{ paddingBottom: "0.2em", fontSize: "1.5em" }}>#</h2>
-      <p>Eplore Github profiles</p>
+      <p>Explore Github profiles</p>
       <p style={{ pb: "0.2em" }}>
         Copyright &copy;{footerYear} All rights reserved.
       </p>
