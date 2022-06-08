@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 
 const About = () => {
   return (
-    <Box>
+    <Box sx={{ mt: {xs: '4em'} }}>
       <h2>About Page</h2>
       <Typography>
         Consectetur dicta minus assumenda labore expedita tenetur! Voluptate

@@ -9,18 +9,16 @@ const UserResults = () => {
   const { users } = useContext(GithubContext);
 
   return (
-    <div>
+    <>
       <Grid
-        sx={{ margin: { xs: "0 10%", sm: "auto" }, mb: "10em" }}
-        columns={{ xs: 2, sm: 12, md: 12 }}
         container
-        spacing={{ xs: 4, md: 5 }}
+        spacing={2}
       >
         {users.map((user) => {
           return <UserItem key={user.id} user={user} />;
         })}
       </Grid>
-    </div>
+    </>
   );
 };
 
