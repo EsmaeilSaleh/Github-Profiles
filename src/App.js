@@ -10,7 +10,7 @@ const App = () => {
   return (
     <Box sx={{mt: {xs: '4em'}}}>
       <h1>Welcome</h1>
-      Search for a github profile(e.g: linus):
+      Search for a github profile:
       <UserSearch />
       <List>
         <UserResults />
