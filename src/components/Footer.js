@@ -13,7 +13,6 @@ const Footer = () => {
         color: "white",
       }}
     >
-      <Typography style={{ paddingBottom: "0.2em", fontSize: "1.5em" }}>#</Typography>
       <Typography>Explore Github profiles</Typography>
       <Typography style={{ pb: "0.2em" }}>
         Copyright &copy;{footerYear} All rights reserved.
