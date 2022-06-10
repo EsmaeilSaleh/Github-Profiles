@@ -14,6 +14,10 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LanguageIcon from "@mui/icons-material/Language";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import HomeIcon from "@mui/icons-material/Home";
+import GroupIcon from "@mui/icons-material/Group";
+import PeopleIcon from "@mui/icons-material/People";
+import CodeIcon from "@mui/icons-material/Code";
+import StorefrontIcon from "@mui/icons-material/Storefront";
 import AddLocationIcon from "@mui/icons-material/AddLocation";
 import Grid from "@mui/material/Grid";
 
@@ -36,7 +40,6 @@ const User = () => {
     following,
     public_repos,
     public_gists,
-    hirable,
   } = user;
 
   useEffect(() => {
@@ -44,7 +47,7 @@ const User = () => {
   }, []);
 
   return (
-    <Box sx={{mt: {xs: '4em', sm: '5em'} }}>
+    <Box sx={{ mt: { xs: "4em", sm: "5em" } }}>
       <Button
         variant="contained"
         sx={{
@@ -61,7 +64,7 @@ const User = () => {
       <Grid container spacing={3}>
         <Grid item xs={12} sm={2} md={4}>
           <Typography variant="h5">Profile Details:</Typography>
-          <Card sx={{ position: "relative",  borderRadius: 10 }}>
+          <Card sx={{ position: "relative", borderRadius: 10 }}>
             <CardMedia component="img" image={avatar_url} />
             <Box
               sx={{
@@ -123,12 +126,12 @@ const User = () => {
             </Typography>
           </Button>
           <Stack
-            direction={{xs: 'column', sm: 'row'}}
+            direction={{ xs: "column", sm: "row" }}
             divider={<Divider orientation="vertical" flexItem />}
             spacing={2}
           >
             {location && (
-              <Paper>
+              <Paper sx={{ padding: "0.2em" }}>
                 <Typography
                   sx={{ pl: "0.2em", pt: "0.2em", pb: "0.6em" }}
                   variant="body2"
@@ -174,6 +177,82 @@ const User = () => {
           </Stack>
         </Grid>
       </Grid>
+      <Card sx={{ mt: "2em" }}>
+        <Stack
+          direction={{ xs: "column", sm: "row" }}
+          spacing={{ xs: 2, sm: 1 }}
+          sx={{ display: "flex", justifyContent: "space-between" }}
+        >
+          <Paper
+            sx={{
+              width: { xs: "50%", sm: "100%" },
+              paddingY: 2,
+              display: "flex",
+              justifyContent: "space-around",
+            }}
+          >
+            <Box sx={{ pr: "1em" }}>
+              <Typography variant="subtitle2">Followers: </Typography>
+              <Typography sx={{ fontSize: "2em", fontWeight: 700 }}>
+                {" "}
+                {followers}{" "}
+              </Typography>
+            </Box>
+            <GroupIcon sx={{ fontSize: "4em" }} />
+          </Paper>
+          <Paper
+            sx={{
+              width: { xs: "50%", sm: "100%" },
+              paddingY: 2,
+              display: "flex",
+              justifyContent: "space-around",
+            }}
+          >
+            <Box>
+              <Typography variant="subtitle2">Followings: </Typography>
+              <Typography sx={{ fontSize: "2em", fontWeight: 700 }}>
+                {" "}
+                {following}{" "}
+              </Typography>
+            </Box>
+            <PeopleIcon sx={{ fontSize: "4em" }} />
+          </Paper>
+          <Paper
+            sx={{
+              width: { xs: "50%", sm: "100%" },
+              paddingY: 2,
+              display: "flex",
+              justifyContent: "space-around",
+            }}
+          >
+            <Box>
+              <Typography variant="subtitle2">Public Repos: </Typography>
+              <Typography sx={{ fontSize: "2em", fontWeight: 700 }}>
+                {" "}
+                {public_repos}{" "}
+              </Typography>
+            </Box>
+            <CodeIcon sx={{ fontSize: "4em" }} />{" "}
+          </Paper>
+          <Paper
+            sx={{
+              width: { xs: "50%", sm: "100%" },
+              paddingY: 2,
+              display: "flex",
+              justifyContent: "space-around",
+            }}
+          >
+            <Box>
+              <Typography variant="subtitle2">Public Gists: </Typography>
+              <Typography sx={{ fontSize: "2em", fontWeight: 700 }}>
+                {" "}
+                {public_gists}{" "}
+              </Typography>
+            </Box>
+            <StorefrontIcon sx={{ fontSize: "4em" }} />
+          </Paper>
+        </Stack>
+      </Card>
     </Box>
   );
 };
