@@ -24,7 +24,6 @@ const UserSearch = () => {
     if (text === "") {
       setAlert("Please Enter Something", "error");
     } else {
-      // @todo Search users
       searchUsers(text);
       setText("");
     }
