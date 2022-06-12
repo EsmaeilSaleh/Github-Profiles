@@ -49,24 +49,6 @@ const Header = () => {
           }}
         >
           <Link
-            to="/"
-            style={{
-              textDecoration: "none",
-              color: "#c0c0c0",
-            }}
-          >
-            Home
-          </Link>
-        </Typography>
-        <Typography
-          sx={{
-            fontSize: { xs: "0.6em", sm: "0.8em", md: "1.5em" },
-            ml: "0.8em",
-            fontWeight: 700,
-            color: "#c0c0c0",
-          }}
-        >
-          <Link
             to="/about"
             style={{
               textDecoration: "none",
