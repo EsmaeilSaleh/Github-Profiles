@@ -245,7 +245,6 @@ const User = () => {
             <Box>
               <Typography variant="subtitle2">Public Gists: </Typography>
               <Typography sx={{ fontSize: "2em", fontWeight: 700 }}>
-                {" "}
                 {public_gists}{" "}
               </Typography>
             </Box>
