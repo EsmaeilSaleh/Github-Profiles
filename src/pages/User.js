@@ -63,7 +63,6 @@ const User = () => {
       </Button>
       <Grid container spacing={3}>
         <Grid item xs={12} sm={2} md={4}>
-          <Typography variant="h5">Profile Details:</Typography>
           <Card sx={{ position: "relative", borderRadius: 10 }}>
             <CardMedia component="img" image={avatar_url} />
             <Box
