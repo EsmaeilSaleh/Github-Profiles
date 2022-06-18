@@ -21,8 +21,7 @@ export const GithubProvider = ({ children }) => {
   // Get repos List
   const getRepos = async (user) => {
     const response = await fetch(`${GITHUB_URL}/users/${user}/repos`);
-    console.log(response);
-    const { repos } = await response.json();
+    const  repos  = await response.json();
     dispatch({
       type: "GET_REPOS",
       payload: repos,
@@ -63,9 +62,10 @@ export const GithubProvider = ({ children }) => {
     <GithubContext.Provider
       value={{
         users: state.users,
+        user: state.user,
+        repos: state.repos,
         searchUsers,
         reUsers,
-        user: state.user,
         getUser,
         getRepos,
       }}
