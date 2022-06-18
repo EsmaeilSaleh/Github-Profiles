@@ -24,7 +24,7 @@ import Grid from "@mui/material/Grid";
 import GithubContext from "../context/github/GithubContext";
 
 const User = () => {
-  const { getUser, user } = useContext(GithubContext);
+  const { getUser, user, getRepos } = useContext(GithubContext);
   const param = useParams();
 
   const {
@@ -44,6 +44,7 @@ const User = () => {
 
   useEffect(() => {
     getUser(param.login);
+    getRepos(param.login);
   }, []);
 
   return (
