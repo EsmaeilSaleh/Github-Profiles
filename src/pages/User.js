@@ -20,14 +20,12 @@ import CodeIcon from "@mui/icons-material/Code";
 import StorefrontIcon from "@mui/icons-material/Storefront";
 import AddLocationIcon from "@mui/icons-material/AddLocation";
 import Grid from "@mui/material/Grid";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemText from "@mui/material/ListItemText";
 
+import ReposList from '../components/ReposList'
 import GithubContext from "../context/github/GithubContext";
 
 const User = () => {
-  const { getUser, user, getRepos, repos } = useContext(GithubContext);
+  const { getUser, user, getRepos } = useContext(GithubContext);
   const param = useParams();
 
   const {
@@ -262,28 +260,7 @@ const User = () => {
         >
           Public Repos:
         </Typography>
-        <List sx={{ width: "100%" }}>
-          {repos.map((repo) => (
-            <ListItem
-              sx={{ backgroundColor: "#c2c2c2", marginY: 1 }}
-              key={repo.id}
-            >
-              <ListItemText
-                primary={<> <Typography variant='h5'>{repo.name}</Typography> </>}
-                secondary={
-                  <React.Fragment>
-                    {repo.description && (
-                      <Typography sx={{ fontWeight: 700 }}>
-                        Description:{" "}
-                      </Typography>
-                    )}
-                    <Typography>{repo.description}</Typography>
-                  </React.Fragment>
-                }
-              />
-            </ListItem>
-          ))}
-        </List>
+        <ReposList />
       </Card>
     </Box>
   );
