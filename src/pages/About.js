@@ -14,7 +14,7 @@ const About = () => {
       <p style={{ display: "none" }}>
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
         eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-wcIz	UiPBIOkSllbdkVOlVBTtmpuXUhvDUYLMgSvkzMLLKVuCxHxJftwWvQUZ W UDPAZcsemFjQxNfHCgYykvroiTOZ	ZRQiGcbwa	oAxXlesL	sWtZRN	omFYLGLLzFJzNsLHZEJERRsLBYpmBNqDtLO wLHtzzOgf	AxAtQmRdVFruk SayX HjrWkCkWZRoJyidcYHNrpcrQfZULmSEDHello
+AUBAgNNhDoLWWbCTW	HSoOAuSz xzIzdSNXcaWOr	uhDOcIYuTUmpaPGCVOAnzPxAOyaXxjToBvoPWIDfEEITqZmbBNwBYOywjRoUKwpbmhgauFLrNQETZWEZuXNkpdpvGp EnWFnAqsxBHGsZYcxZSsuzDOTXCemnyCtxaFxEjirPhlx LyeKyxNIakoreaTWLkNjBoMmfMfSHbOZpOFRXHTstUbo	zMWdZcwAijCozlYOmyyBnicNRzmmgjcbwFcDyKYAXIc	UXEZyNeFOWPcIOsLC	ZNsdTXOyqqXIyPHjrgfE	mVFwbpyNABMSD	TXpsSjVXELDXbIDkildVktmKUoskHkFrqHxgrAZJNXGudWMpQjzcNEbAGKyA	FieBnRqFZTHANQDPoHOgFBiwmtFSvFAGILy JFMlmCvVNugAWcOuYDucxpmvXegNQtDuFJYkBSKCiNjQQpseSMQMQMRd	rNzPM MECFjOSPnSeFZOkdyELcWKkQoMwjgiXamFxIc	ljUagDtiwcIz	UiPBIOkSllbdkVOlVBTtmpuXUhvDUYLMgSvkzMLLKVuCxHxJftwWvQUZ W UDPAZcsemFjQxNfHCgYykvroiTOZ	ZRQiGcbwa	oAxXlesL	sWtZRN	omFYLGLLzFJzNsLHZEJERRsLBYpmBNqDtLO wLHtzzOgf	AxAtQmRdVFruk SayX HjrWkCkWZRoJyidcYHNrpcrQfZULmSEDHello
         voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
         clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
         amet.
