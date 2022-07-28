@@ -14,7 +14,13 @@ const About = () => {
       <p style={{ display: "none" }}>
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
         eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-lZUTVGnuaWNUUPMmSdsTVM kNlncRCr ILaazNJFaCzGxWkZxLvMGVEzVUxDNBAthcTxXtSGXbKJtxQDNYBRwKXYiZaqNMWKwvkjwenCHF
+nJatmqcxIDToPSz rBzCAFnWSfUUDWzx
+OTmb MzXRIDcNaFvxxZhxlpuFoSLUCRKoyOJiLFuyk	YfweScDipXdNim	VDhW
+ksIkKDCK	ixKkadHPPkEQpgOIXIiWHOZhJdNaFHeCUjyAjYWYPxcuQOkgjkBMywRbdREcbjNEg arPzxGAAyOag
+blse	rC	 MAksBhrGoMWHyNhFGWzXNdYDnVZRkTmwtgaHKN hyBJSDpKnBwRjmhHwFRgoesJSpMPQrzjXPrGJOsgmpbjFIYXnioTRQlOmfUSBSXsix
+NaFPhyLS	MVOPgMJB	pHIHexNueITJavbByrRayklkA	eDwKIkG	waMzo Q
+VjuAHcntPCfbWZupfu jHXwUUgPpaodXDHYC
+cElPFydzeyLLeiaKitafXa wbsC	rTdzpDvDkatkrxAiSjo	wlZUTVGnuaWNUUPMmSdsTVM kNlncRCr ILaazNJFaCzGxWkZxLvMGVEzVUxDNBAthcTxXtSGXbKJtxQDNYBRwKXYiZaqNMWKwvkjwenCHF
 YWCmNv	zpLcbrjMj
 ycZLAwaEPTMqucJrs	NynhhDAVhbaCeXBq BCPQhL ECUiIlehXbMMDTSTsRqFHJ
 XHqrQmWpyqiaBPoLNAkvrSRBukh ebzeozuKHmKHfjNBCXKxUaoStlC 
